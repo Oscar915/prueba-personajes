@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+    margin-top: 60px auto;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 300px){
+    img{
+        width: 80%;
+    }
+
+    .ms-2{
+        margin-left: 1px !important;
+    }
+}

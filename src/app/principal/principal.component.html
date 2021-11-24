@@ -1,0 +1,25 @@
+
+<div class="container mt-5">
+    <h1>Lista de personajes</h1>
+    <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Status</th>
+            <th scope="col">Specie</th>
+            <th scope="col">Ver detalles</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of personajes">
+          <tr>
+            <td><img src="{{item.image}}" alt="" set="" width="100"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.status}}</td>
+            <td>{{item.species}}</td>
+            <td><a routerLink="/detalle/{{item.id}}" class="btn btn-success">Ver mas...</a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+</div>
